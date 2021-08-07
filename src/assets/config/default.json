@@ -1,0 +1,24 @@
+{
+  "localUrl": "http://localhost:3000",
+  "foundationServices": {
+    "backendServiceUrl": "http://localhost:3080/api",
+    "translationServiceUrl": "http://localhost:3081/api",
+    "auditServiceUrl": "http://1.1.1.1:3082/api",
+    "notificationReadServiceUrl": "http://localhost:3083/api",
+    "dashboardServiceUrl": "http://localhost:3084/api",
+    "settingsServiceUrl": "http://localhost:30085/api"
+  },
+  "authentication": {
+    "cookieName": "ReactNextGenClientIdentification",
+    "loginUrl": "http://www.google.com",
+    "isDevEnvironment": true
+  },
+  "dateFormats": {
+    "plannerDateFormat": "dd/MM/yyyy HH:mm"
+  },
+  "imagePaths": {
+    "default": "assets/images",
+    "iconPath": "assets/images/icon"
+  },
+  "refreshInterval": 300000
+}
