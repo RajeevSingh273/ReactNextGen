@@ -33,6 +33,7 @@ const App: React.FC = (): JSX.Element => {
   const [darkMode, setDarkMode] = useState(
     window.localStorage.getItem("theme") === "dark"
   );
+
   return (
     <div className="App">
       <MuiThemeProvider theme={darkMode ? darkTheme : lightTheme}>

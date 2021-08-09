@@ -16,7 +16,7 @@ export const darkTheme = createTheme({
     primary: { main: "#3452B4" },
     secondary: { light: "#969695", main: "#1e1e1e", dark: "#000" },
     common: { black: "#000", white: "#fff" },
-    background: { paper: "#393946", card: "#272727", default: "#121212" },
+    background: { paper: "#393946", default: "#121212" },
     error: {
       light: "#e57373",
       main: "#f44336",

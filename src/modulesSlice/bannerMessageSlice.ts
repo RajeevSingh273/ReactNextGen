@@ -10,7 +10,7 @@ interface InitialState {
 }
 
 const initialState: InitialState = {
-  banner: {} as any,
+  banner: {} as BannerMessage,
   show: false,
   loading: false,
 };
