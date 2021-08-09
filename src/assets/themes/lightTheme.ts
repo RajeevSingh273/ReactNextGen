@@ -16,7 +16,7 @@ export const lightTheme = createTheme({
     primary: { main: "#3452B4", contrastText: "#fff" },
     secondary: { light: "#969695", main: "#1e1e1e", dark: "#000" },
     common: { black: "#000", white: "#fff" },
-    background: { paper: "#f5f5f5", card: "#ccc", default: "#fff" },
+    background: { paper: "#f5f5f5", default: "#fff" },
     error: {
       light: "#e57373",
       main: "#f44336",
