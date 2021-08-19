@@ -1,6 +1,7 @@
 # ReactNextGen
 
 ## Project structure
+```
 .
 └── ReactNextGen/
     ├── public/
@@ -52,6 +53,7 @@
     ├── .env
     ├── package.json
     └── tsconfig.json
+```
 
 ## Developing
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), so it contains all the scripts you know and love:
