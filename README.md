@@ -1,4 +1,7 @@
-# ReactNextGen
+<div align="center"><h1> ReactNextGen</h1></div>
+<br />
+<div align="center"><strong>Start your next react + Type-script + Redux-toolkit + Meterial-Ui project in seconds</strong></div>
+<br /><br /><br />
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
