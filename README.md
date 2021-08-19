@@ -1,7 +1,57 @@
 # ReactNextGen
 
 ## Project structure
-![image](https://user-images.githubusercontent.com/4947562/130121121-c24ceb7a-9bb3-4fbe-85e3-de7b48cced1f.png)
+.
+└── ReactNextGen/
+    ├── public/
+    │   ├── data
+    │   ├── enums
+    │   └── model
+    ├── src/
+    │   ├── app/
+    │   │   ├── data
+    │   │   ├── enums
+    │   │   └── model
+    │   ├── assets/
+    │   │   ├── config/
+    │   │   │   └── default.json
+    │   │   ├── images
+    │   │   ├── styles/
+    │   │   │   ├── commonStyle.ts
+    │   │   │   └── index.ts
+    │   │   └── themes/
+    │   │       ├── index.ts
+    │   │       ├── darkTheme.ts
+    │   │       └── lightTheme.ts
+    │   ├── components/
+    │   │   ├── footer
+    │   │   ├── header/
+    │   │   │   ├── banner.tsx
+    │   │   │   ├── index.tsx
+    │   │   │   ├── navBar.tsx
+    │   │   │   └── subMene.tsx
+    │   │   ├── help
+    │   │   ├── about.tsx
+    │   │   └── home.tsx
+    │   ├── modulesAPI/
+    │   │   ├── bannerMessgeAPI.ts
+    │   │   └── requestAPI.ts
+    │   ├── modulesSlice/
+    │   │   ├── bannerMessageSlice.ts
+    │   │   └── index.ts   
+    │   ├── reduxStore/
+    │   │   └── store.ts
+    │   ├── routes/
+    │   │   └── appRoutes.tsx
+    │   ├── App.css
+    │   ├── App.test.tsx
+    │   ├── App.tsx
+    │   ├── index.css
+    │   ├── index.tsx
+    │   └── logo.svg
+    ├── .env
+    ├── package.json
+    └── tsconfig.json
 
 ## Developing
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), so it contains all the scripts you know and love:
