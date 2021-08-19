@@ -6,7 +6,7 @@
 ## Developing
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), so it contains all the scripts you know and love:
 
-### yarn start
+### npm/yarn start
 Runs the app in the development mode.
 Open http://localhost:3000 to view it in the browser.
 
