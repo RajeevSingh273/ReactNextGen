@@ -3,10 +3,7 @@
   "foundationServices": {
     "backendServiceUrl": "http://localhost:3080/api",
     "translationServiceUrl": "http://localhost:3081/api",
-    "auditServiceUrl": "http://1.1.1.1:3082/api",
-    "notificationReadServiceUrl": "http://localhost:3083/api",
-    "dashboardServiceUrl": "http://localhost:3084/api",
-    "settingsServiceUrl": "http://localhost:30085/api"
+    "notificationReadServiceUrl": "http://localhost:3082/api"
   },
   "authentication": {
     "cookieName": "ReactNextGenClientIdentification",

@@ -8,11 +8,38 @@ const Home: React.FC = (): JSX.Element => {
       </p>
       <a
         className="App-link"
-        href="https://reactjs.org"
+        href="https://redux-toolkit.js.org/usage/usage-with-typescript"
         target="_blank"
         rel="noopener noreferrer"
       >
         Learn React
+      </a>
+      <br /><br />
+      <a
+        className="App-link"
+        href="https://redux-toolkit.js.org/usage/usage-with-typescript"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Learn Redux-toolkit
+      </a>
+      <br /><br />
+      <a
+        className="App-link"
+        href="https://www.typescriptlang.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Learn TypeScript
+      </a>
+      <br /><br />
+      <a
+        className="App-link"
+        href="https://material-ui.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Learn Material-UI
       </a>
     </>
   );

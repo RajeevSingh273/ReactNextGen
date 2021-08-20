@@ -3,7 +3,7 @@ import { BannerMessage } from "../app/model/bannerMessage.model";
 // import swal from "@sweetalert/with-react";
 
 /* * initial State */
-interface InitialState {
+export interface InitialState {
   banner: BannerMessage;
   show: boolean;
   loading: boolean;
@@ -19,18 +19,24 @@ const bannerMessageSlice = createSlice({
   name: "bannerMessage",
   initialState,
   reducers: {
-    BannerMessageLoadingStatus: (state) => {
+    BannerMessageLoadingStatus: (state: InitialState) => {
       state.loading = true;
     },
 
-    FetchBannerMessage: (state, action: PayloadAction<BannerMessage>) => {
+    FetchBannerMessage: (
+      state: InitialState,
+      action: PayloadAction<BannerMessage>
+    ) => {
       // console.log("Banner Payload", action.payload, !!action.payload.message.match(/\w+/));
       state.loading = false;
       state.banner = action.payload;
       state.show = !!action.payload.message.match(/\w+/);
     },
 
-    UpdateBannerMessage: (state, action: PayloadAction<BannerMessage>) => {
+    UpdateBannerMessage: (
+      state: InitialState,
+      action: PayloadAction<BannerMessage>
+    ) => {
       state.loading = false;
       state.banner = action.payload;
       state.show = !!action.payload.message.match(/\w+/);
@@ -41,9 +47,10 @@ const bannerMessageSlice = createSlice({
       //   });
     },
 
-    BannerMessageToggleDisplay: (state) => {
+    BannerMessageToggleDisplay: (state: InitialState) => {
       state.show = !state.show;
     },
+    //Todo Add error handling code
   },
 });
 
