@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { MuiThemeProvider, makeStyles } from "@material-ui/core/styles";
 import { Banner } from "./components/header";
+import { Footer } from "./components/footer";
 import { AppBar, CssBaseline } from "@material-ui/core";
 import { NavBar } from "./components/header/nevBar";
 import { darkTheme, lightTheme } from "./assets/themes";
@@ -9,10 +10,10 @@ import "./App.css";
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: theme.palette.primary.contrastText,
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(10),
   },
   content: {
     flexGrow: 1,
@@ -24,7 +25,12 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: theme.spacing(3),
     paddingLeft: 0,
     paddingRight: 0,
-    maxWidth: "100%",
+    maxWidth: "40%",
+  },
+  footer: {
+    backgroundColor: theme.palette.primary.main,
+    color: theme.palette.primary.contrastText,
+    padding: theme.spacing(1)
   },
 }));
 
@@ -45,6 +51,9 @@ const App: React.FC = (): JSX.Element => {
           <Banner />
           <AppRoutes />
         </main>
+        <footer className={classes.footer}>
+          <Footer darkMode={darkMode} setDarkMode={setDarkMode} />
+        </footer>
       </MuiThemeProvider>
     </div>
   );

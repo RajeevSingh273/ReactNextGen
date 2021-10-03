@@ -15,8 +15,6 @@ import {
   AppBar,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
-import Brightness4Icon from "@material-ui/icons/Brightness4";
-import Brightness7Icon from "@material-ui/icons/Brightness7";
 import logo from "../../logo.svg";
 import { SubMenu } from "./subMenu";
 import { commonStyle } from "../../assets/styles/index";
@@ -50,17 +48,7 @@ export const NavBar: React.FC<ChildProps> = (props) => {
     right: false,
   });
 
-  const applyLightTheme = () => {
-    props.setDarkMode(false);
-    window.localStorage.setItem("theme", "light");
-  };
-  const applyDarkTheme = () => {
-    props.setDarkMode(true);
-    window.localStorage.setItem("theme", "dark");
-  };
-
   const homeTab = { text: "Home", url: "/" };
-  const aboutTab = { text: "About", url: "/about" };
   const helpTab = {
     title: "Help",
     links: [
@@ -68,29 +56,10 @@ export const NavBar: React.FC<ChildProps> = (props) => {
       { text: "Redux Help", url: "/help/readuxhelp" },
     ],
   };
-  const accountTab = {
-    title: "Theme",
-    links: [
-      {
-        text: "Light Switch",
-        action: () => {
-          props.darkMode ? applyLightTheme() : applyDarkTheme();
-        },
-        render: () => (
-          <>
-            {props.darkMode ? <Brightness7Icon /> : <Brightness4Icon />}
-            &nbsp;Dark Theme: {props.darkMode ? "On" : "Off"}
-          </>
-        ),
-      },
-    ],
-  };
 
   const navTabs: any = [];
   navTabs.push(homeTab);
-  navTabs.push(aboutTab);
   navTabs.push(helpTab);
-  navTabs.push(accountTab);
 
   const toggleDrawer = (side: string, open: boolean) => (event: any) => {
     if (
